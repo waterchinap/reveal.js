@@ -25,12 +25,72 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>
+						This is the html h1 
+					</h1>
+					<h2>
+						是否可以用中文？
+					</h2>
+					<p>press F to view in full screen</p>
+					</section>
+				<section data-markdown>
+					<textarea data-template>
+						### This is a head 2
+						- try some list
+						- try list
+						- how many 
+						- list
+						- is good
+						- enough
+						- for the space
+						- let
+						- us
+						- try
+						- ten seems ok, no more show!
+						- add some 
+						- more
+						- lines
+
+
+					</textarea>
+				</section>
+				<section>
+					<div><h2>Try two columns</h2></div>
+
+					<div style='overflow:hidden'>  
+						<div data-markdown style="float:left; width:50%">
+							try markdonw in div
+							- seems
+							- ok
+						</div>
+
+						<div data-markdown style="float:right; width:50%">
+							try markdonw in div
+							- seems
+							- ok
+							- different
+							- leghth
+						</div>
+					</div>
+
+					<div><h4>Conclusion:<br/>can use some style in the section field and get what you want</h4></div>
+				</section>
+
+				<section>					
+					<!-- data-background-iframe="http://localhost:8000/graph.html" -->
+					<iframe src=" http://localhost:8000/graph.html" frameborder="0" width="800px", height="600px", scrolling="no"></iframe>
+				</section>
+
+				<section data-background-image=http://bimgs.plmeizi.com/images/bing/2020/OHR.CloudsPelmo_ZH-CN3713829654_1920x1080.jpg data-background-size=cover data-background-opacity=0.2>
+					<div>Use section data-background to set img or iframe enven video backbround</div>
+				</section>
+
 			</div>
 		</div>
 
 		<script src="js/reveal.js"></script>
+		<script src="js/echarts.min.js"></script>
 
 		<script>
 			// More info about config & dependencies:
@@ -38,6 +98,11 @@
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
 				hash: true,
+				// width: "100%",
+				// height: "100%",
+				// margin: 0,
+				// minScale: 1,
+				// maxScale: 1,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
